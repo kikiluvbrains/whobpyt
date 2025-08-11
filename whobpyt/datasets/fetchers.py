@@ -178,6 +178,8 @@ def fetch_egtmseeg(dest_folder=None, redownload=False):
     
         os.chdir(dest_folder)
 
+        osf_folder_url = "https://files.ca-1.osf.io/v1/resources/u7kgw/providers/osfstorage/6837772e428f2b32e585b232/?zip="
+
         dlcode = osf_folder_url
         pull_file(dlcode, file_name, download_method='wget')
    
